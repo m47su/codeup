@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script type="module" src="./assets/js/script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">
+        <img src="./img/logo.svg" class="img-logo" />
+      </a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#about-us">Sobre Nós</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#parcerias">Parcerias</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="slider">
+        <div class="list">
+          <div class="item">
+            <img src="./img/home.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/home2.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/home3.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/home4.png" alt="" />
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="prev"><</button>
+          <button id="next">></button>
+        </div>
+        <ul class="dots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="rool-images">
+        <div class="image-container">
+          <div class="image-item">
+            <img
+              src="./img/computador.png"
+              alt="Imagem 1"
+              id="img-computador"
+            />
+            <p>12,7% dos profissionais de tecnologia são mulheres.</p>
+          </div>
+          <div class="image-item">
+            <img src="./img/simbolo.png" alt="Imagem 2" id="img-simbolo" />
+            <p>Em média, mulheres ganham 20,5% a menos que homens.</p>
+          </div>
+          <div class="image-item">
+            <img src="./img/mulher.png" alt="Imagem 3" id="img-mulher" />
+            <p>
+              Mulheres negras ocupam apenas 11% dos cargos na indústria de
+              tecnologia.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="home-content">
+        <h1 id="texto-mulheres">Vamos mudar essas estatísticas juntas?</h1>
+      </div>
+    </section>
+
+    <section class="objetivo" id="objetivo">
+      <div class="objetivo-content">
+        <div class="flex">
+          <h2 class="heading" id="nosso-objetivo">Nosso Objetivo</h2>
+          <p>
+            Capacitar e incentivar mulheres nas áreas de exatas e tecnológicas.
+          </p>
+        </div>
+        <div class="imagem-flex">
+          <img src="./img/objetivo.png" alt="Objetivo" id="objetivo-img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="proposito" id="proposito">
+      <h2 class="heading" id="nosso-proposito">Nosso Propósito</h2>
+
+      <div class="proposito-card">
+        <div class="proposito-card-text">
+          <p>
+            Capacitar e apoiar mulheres na área de tecnologia, oferecendo
+            cursos, mentorias e recursos para promover sua inclusão e sucesso no
+            campo da programação e computação.
+          </p>
+        </div>
+        <div class="proposito-card-image">
+          <img src="./img/missao.png" alt="Imagem missão" />
+        </div>
+      </div>
+
+      <div class="proposito-card">
+        <div class="proposito-card-text">
+          <p>
+            Criar uma comunidade diversificada, inclusiva e com igualdade de
+            oportunidades, e as mulheres se sintam capacitadas e encorajadas a
+            explorar todo o seu potencial na área de tecnologia.
+          </p>
+        </div>
+        <div class="proposito-card-image">
+          <img src="./img/visao.png" alt="Imagem visao" />
+        </div>
+      </div>
+
+      <div class="proposito-card">
+        <div class="proposito-card-text">
+          <p>
+            Inclusão: Oferecer oportunidades justas para mulheres.
+            <br />
+            Empoderamento: Capacitar mulheres na área de tecnologia.
+            <br />
+            Excelência: Comprometemo-nos com a excelência em tudo o que fazemos.
+            <br />
+            Impacto: Gerar um impacto positivo na vida das mulheres,
+            capacitando-as para construir carreiras bem-sucedidas e influentes.
+          </p>
+        </div>
+        <div class="proposito-card-image">
+          <img src="./img/valores.png" alt="Imagem valores" />
+        </div>
+      </div>
+    </section>
+
+    <section class="eventos" id="eventos">
+      <h2 class="heading" id="nossos-eventos">Eventos Realizados</h2>
+
+      <div class="eventos-card">
+        <div class="card-text-eventos">
+          <h3>Curso de Elétrica</h3>
+          <p class="localizacao">
+            <i class="fa-solid fa-location-dot"></i> Cruz das Almas - UFRB -
+            20/02/23
+          </p>
+          <div class="btn-eventos">
+            <a href="#" class="btn-e">Saiba Mais</a>
+          </div>
+        </div>
+        <div class="eventos-card-image">
+          <img src="./img/meninas.jpg" alt="Imagem meninas" />
+        </div>
+      </div>
+
+      <div class="eventos-card">
+        <div class="card-text-eventos">
+          <h3>Curso de Arduíno</h3>
+          <p class="localizacao">
+            <i class="fa-solid fa-location-dot"></i> Feira de Santana e Cruz das
+            Almas - UFRB - 10/09/23
+          </p>
+          <div class="btn-eventos">
+            <a href="#" class="btn-e">Saiba Mais</a>
+          </div>
+        </div>
+        <div class="eventos-card-image">
+          <img src="./img/arduino.jpg" alt="Imagem arduino" />
+        </div>
+      </div>
+    </section>
+
+    <section class="cursos" id="cursos">
+      <h2 class="heading">Cursos e Materiais</h2>
+      <div class="cursos-content">
+        <div class="cursos-text">
+          <p>
+            Cursos atualizados com o mercado, feitos para desenvolver suas
+            habilidades e impulsionar sua carreira!
+          </p>
+          <div class="btn-group">
+            <a href="#" class="btn-group">Saiba Mais</a>
+          </div>
+        </div>
+        <div class="cursos-img">
+          <img id="cursos" src="./img/cursos.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="heading">Projetos e Contribuições</h2>
+
+      <div class="project-card">
+        <div class="card-text">
+          <h3>Artigo na COBENGE</h3>
+          <p>Publicação do artigo “Code Up: Mulheres na programação”</p>
+          <div class="btn-project">
+            <a href="#contact" class="btn-p">Ver Projeto</a>
+          </div>
+        </div>
+        <div class="card-image">
+          <img src="./img/digitando.jpg" alt="Imagem do projeto" />
+        </div>
+        <img src="./img/cobenge.png" class="project-logo" alt="Logo" />
+      </div>
+
+      <div class="project-card">
+        <div class="card-text">
+          <h3>Revista Extensão</h3>
+          <p>“Atraindo mulheres para a área de tecnologia: Projeto CodeUp”</p>
+          <div class="btn-project">
+            <a href="#contact" class="btn-p">Ver Projeto</a>
+          </div>
+        </div>
+        <div class="card-image">
+          <img src="./img/livro.jpg" alt="Imagem do projeto" />
+        </div>
+        <img src="./img/extensao.png" class="project-logo" alt="Logo" />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h2>Sobre</h2>
+          <p>
+            CodeUp é um projeto que visa trazer mulheres para áreas de exatas e
+            tecnologia, ofertando cursos e oportunidades de capacitação.
+          </p>
+          <img
+            src="./img/logo-branca.svg"
+            alt="Logo CodeUp"
+            class="footer-logo"
+          />
+        </div>
+
+        <div class="footer-contacts">
+          <h2>Contatos</h2>
+          <ul>
+            <li><i class="fas fa-envelope"></i> projetocodeup@gmail.com</li>
+            <li><i class="fab fa-instagram"></i> codeup.proj</li>
+            <li><i class="fab fa-linkedin"></i> Projeto CodeUp</li>
+            <li><i class="fab fa-github"></i> CodeUpproj</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="copyright">
+        Copyright © 2024 Todos os direitos Reservados - CodeUp
+      </p>
+    </footer>
+  </body>
+</html>
