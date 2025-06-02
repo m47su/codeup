@@ -1,0 +1,262 @@
+.sobre {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5rem;
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.texto-sobre {
+  flex: 1 1 600px;
+}
+
+.texto-sobre h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  margin-top: 8rem;
+}
+
+.texto-sobre h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 42%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #3a0440;
+}
+
+.texto-sobre p {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: #3a0440;
+  margin-bottom: 1.2rem;
+}
+
+.image-aboutus {
+  max-width: 400px;
+  height: auto;
+  flex: 1 1 300px;
+}
+
+.timeline {
+  width: 100%;
+  padding: 6rem 0;
+  background-color: #fad0fa;
+  position: relative;
+}
+
+.timeline h2 {
+  text-align: center;
+  font-size: 5rem;
+  color: #3a0440;
+  margin-bottom: 6rem;
+  position: relative;
+  z-index: 2;
+  background-color: #fad0fa;
+  width: fit-content;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: calc(100% - 120px);
+  background-color: #3a0440;
+}
+
+.timeline-item {
+  width: 100%;
+  position: relative;
+  margin: 6rem 0;
+  min-height: 120px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  left: calc(50% - 31%);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  left: 55%;
+}
+
+.timeline-content {
+  position: absolute;
+  width: 27%;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ccc;
+  top: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.timeline-content:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 18px;
+  height: 18px;
+  background-color: #3a0440;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-date {
+  position: absolute;
+  top: -3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fad0fa;
+  color: #3a0440;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #3a0440;
+  font-size: 2.3rem;
+}
+
+.timeline-content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* MEMBROS */
+
+.equipe {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.info-cruz h2 {
+  font-size: 5rem;
+  color: #2c003e;
+  position: relative;
+  display: inline-block;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.info-cruz h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #3a0440;
+}
+
+.info-cruz p {
+  font-size: 2.2rem;
+  margin-top: 5rem;
+  color: #2c003e;
+}
+
+.info-cruz h3 {
+  font-size: 3.3rem;
+  font-weight: 600;
+  color: #2c003e;
+  margin-top: 4cap;
+}
+
+.membros-cruz {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card-membro {
+  width: 180px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card-membro img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-membro:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(122, 63, 157, 0.4);
+}
+
+.card-membro h4 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: #2c003e;
+}
+
+.card-membro p {
+  font-size: 1.7rem;
+  color: #333;
+  margin: 0;
+  margin-bottom: 6rem;
+}
+
+/* MEMBROS SAJ */
+.membros-saj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.membros-saj h3 {
+  font-size: 3.3rem;
+  font-weight: 700;
+  color: #2c003e;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+
+.membros-saj-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+}
