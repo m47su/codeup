@@ -27,44 +27,53 @@ menuIcon.onclick = () => {
 
 
 // Carrossel de images
-let slider = document.querySelector('.slider .list');
-let items = document.querySelectorAll('.slider .list .item');
-let next = document.getElementById('next');
-let prev = document.getElementById('prev');
-let dots = document.querySelectorAll('.slider .dots li');
-
-let lengthItems = items.length - 1;
-let active = 0;
-next.onclick = function(){
-    active = active + 1 <= lengthItems ? active + 1 : 0;
-    reloadSlider();
-}
-prev.onclick = function(){
-    active = active - 1 >= 0 ? active - 1 : lengthItems;
-    reloadSlider();
-}
-let refreshInterval = setInterval(()=> {next.click()}, 3000);
-function reloadSlider(){
-    slider.style.left = -items[active].offsetLeft + 'px'; 
-    let last_active_dot = document.querySelector('.slider .dots li.active');
-    last_active_dot.classList.remove('active');
-    dots[active].classList.add('active');
-
-    clearInterval(refreshInterval);
-    refreshInterval = setInterval(()=> {next.click()}, 3000);
+document.addEventListener('DOMContentLoaded', function() {
+    let slider = document.querySelector('.slider');
+    let list = document.querySelector('.slider .list');
+    let items = document.querySelectorAll('.slider .list .item');
+    let next = document.getElementById('next');
+    let prev = document.getElementById('prev');
+    let dots = document.querySelectorAll('.slider .dots li');
     
-}
+    if (!list || !next || !prev || dots.length === 0) {
+        console.error("Elementos não encontrados!");
+        return;
+    }
 
-dots.forEach((li, key) => {
-    li.addEventListener('click', ()=>{
-         active = key;
-         reloadSlider();
-    })
-})
-window.onresize = function(event) {
+    let lengthItems = items.length;
+    let active = 0;
+    let refreshInterval;
+
+    list.style.transition = 'transform 0.5s ease';
+
+    function reloadSlider() {
+        list.style.transform = `translateX(-${active * 100}%)`;
+        
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[active].classList.add('active');
+        
+        clearInterval(refreshInterval);
+        refreshInterval = setInterval(() => next.click(), 3000); 
+    }
+
+    next.onclick = function() {
+        active = (active + 1) % lengthItems;
+        reloadSlider();
+    };
+
+    prev.onclick = function() {
+        active = (active - 1 + lengthItems) % lengthItems;
+        reloadSlider();
+    };
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            active = index;
+            reloadSlider();
+        });
+    });
+
     reloadSlider();
-};
 
-
-
-
+    window.addEventListener('resize', reloadSlider);
+});
