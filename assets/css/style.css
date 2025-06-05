@@ -24,6 +24,31 @@ body {
   overflow-x: hidden;
 }
 
+.h2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #3a0440;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2::after {
+  content: "";
+  display: block;
+  margin-top: 10px; 
+  width: 100%;
+  height: 3px;
+  background-color: #3a0440;
+  border-radius: 2px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -340,17 +365,21 @@ section {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #3a0440;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
 }
 
-.proposito h2::before {
+.proposito h2::after {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 39%;
-  transform: translateX(-50%);
-  width: 80px;
+  display: block;
+  margin-top: 10px; 
+  width: 100%;
   height: 3px;
   background-color: #3a0440;
+  border-radius: 2px;
 }
 .proposito h3 {
   font-size: 4rem;
@@ -430,17 +459,21 @@ section {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #3a0440;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
 }
 
-.eventos h2::before {
+.eventos h2::after {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 36%;
-  transform: translateX(-50%);
-  width: 80px;
+  display: block;
+  margin-top: 10px; 
+  width: 100%;
   height: 3px;
   background-color: #3a0440;
+  border-radius: 2px;
 }
 .eventos p {
   font-size: 18px;
@@ -579,17 +612,21 @@ section {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #3a0440;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cursos h2::before {
+.cursos h2::after {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 37%;
-  transform: translateX(-50%);
-  width: 80px;
+  display: block;
+  margin-top: 10px; 
+  width: 100%;
   height: 3px;
   background-color: #3a0440;
+  border-radius: 2px;
 }
 .cursos-content {
   display: flex;
@@ -618,11 +655,11 @@ section {
   font-size: 24px;
   margin-top: 24px;
   line-height: 150%;
-  max-width: 1000px;
+  max-width: 83%;
   text-align: justify;
   font-family: "Nunito", sans-serif;
   color: #828282;
-  left: 7rem;
+  left: 13rem;
   position: relative;
   font-weight: 500;
 }
@@ -661,7 +698,7 @@ section {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin-left: 4rem;
+  margin-left: 8rem;
 }
 
 .btn-group a {
@@ -684,17 +721,21 @@ section {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #3a0440;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
 }
 
-.projects h2::before {
+.projects h2::after {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 32%;
-  transform: translateX(-50%);
-  width: 80px;
+  display: block;
+  margin-top: 10px; 
+  width: 100%;
   height: 3px;
   background-color: #3a0440;
+  border-radius: 2px;
 }
 
 .projects h3 {
@@ -1128,7 +1169,6 @@ section {
     }
 
     .proposito h2::before {
-      left: 15%;
       width: 40px;
     }
 
@@ -1157,7 +1197,6 @@ section {
     }
 
     .eventos h2::before {
-      left: 12%;
       width: 40px;
     }
 
@@ -1186,7 +1225,6 @@ section {
     }
 
     .cursos h2::before {
-      left: 10%;
       width: 40px;
     }
 
@@ -1216,14 +1254,11 @@ section {
     }
 
     .projects h2 {
-      font-size: 3rem;
-      position: relative;
-      display: initial;
+      font-size: 4rem;
     }
   }
 
   .projects h2::before {
-    left: 7%;
     width: 40px;
   }
 
