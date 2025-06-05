@@ -839,6 +839,94 @@ section {
   display: block;
 }
 
+
+
+/* PAGINA EVENTOS */
+
+.eventos-page{
+  padding: 100px 15px;
+}
+
+.eventos-page h2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #3a0440;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eventos-page h2::after {
+  content: "";
+  display: block;
+  margin-top: 10px; 
+  width: 100%;
+  height: 3px;
+  background-color: #3a0440;
+  border-radius: 2px;
+}
+
+.eventos-page h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 4rem;
+  margin-top: 10rem;
+  color: #3a0440;
+}
+
+.eventos-page p {
+  font-size: 18px;
+  line-height: 150%;
+  max-width: 1000px;
+  text-align: justify;
+  font-family: "Nunito", sans-serif;
+  color: #828282;
+  padding: 4rem;
+}
+.eventos-page-card {
+  display: flex;
+  border-radius: 24px;
+  overflow: hidden;
+  margin: 5rem auto 5rem;
+  max-width: 800px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+
+.eventos-page-card:hover {
+  transform: scale(1.02);
+}
+
+.eventos-page-card-text {
+  flex: 1;
+}
+
+.eventos-page-card-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.eventos-page-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+
 /* FOOTER */
 
 .footer {
@@ -1167,6 +1255,9 @@ section {
     .proposito h2 {
       font-size: 4rem;
     }
+    .eventos-page h2 {
+      font-size: 3rem;
+    }
 
     .proposito h2::before {
       width: 40px;
@@ -1259,7 +1350,7 @@ section {
     .projects h2 {
       font-size: 4rem;
     }
-  }
+  
 
   .projects h2::before {
     width: 40px;
@@ -1342,6 +1433,60 @@ section {
     height: 25rem;
   }
 
+
+
+  /* PAGINA EVENTOS */
+
+   .eventos-page h2 {
+      font-size: 3rem;
+    }
+  
+
+  .eventos-page h2::before {
+    width: 40px;
+  }
+
+  .eventos-page h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  .eventos-page p {
+    font-size: 1.3rem;
+    line-height: 150%;
+    max-width: 500px;
+    text-align: justify;
+    font-family: "Nunito", sans-serif;
+    color: #828282;
+    padding: 1rem;
+  }
+
+  
+
+  .eventos-page-card {
+    display: flex;
+    border-radius: 24px;
+    overflow: hidden;
+    margin: 2.5rem auto 2.5rem;
+    max-width: 400px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+  }
+
+  .eventos-page-card:hover {
+    transform: scale(1.02);
+  }
+
+  .eventos-page-card-text {
+    flex: 1;
+    height: 20rem;
+  }
+
   .home-content h1 {
     font-size: 4rem;
   }
@@ -1382,5 +1527,6 @@ section {
 
   .footer .copyright {
     font-size: 12px;
+  }
   }
 }
