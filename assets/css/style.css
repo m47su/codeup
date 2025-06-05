@@ -1246,6 +1246,9 @@ section {
     .cursos p {
       font-size: 2rem;
       width: 100%;
+      text-align: justify;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .btn-group a {
