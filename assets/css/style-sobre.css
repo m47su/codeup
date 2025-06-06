@@ -8,7 +8,9 @@
   padding: 2rem;
   flex-wrap: wrap;
 }
-
+.sobre:hover img {
+  transform: scale(1.05);
+}
 .texto-sobre {
   flex: 1 1 600px;
 }
@@ -16,23 +18,23 @@
 .texto-sobre h1 {
   font-family: "Poppins", sans-serif;
   font-size: 5rem;
-  margin-bottom: 1.5rem;
   position: relative;
   text-align: center;
   color: #333;
-  margin-bottom: 40px;
   margin-top: 8rem;
+  margin-bottom: 40px;
 }
 
-.texto-sobre h1::before {
+.texto-sobre h1::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 42%;
+  bottom: -10px;
+  left: 50%;
   transform: translateX(-50%);
-  width: 80px;
+  width: 200px;
   height: 3px;
   background-color: #3a0440;
+  border-radius: 2px;
 }
 
 .texto-sobre p {
@@ -163,20 +165,20 @@
   font-size: 5rem;
   color: #2c003e;
   position: relative;
-  display: inline-block;
-  margin-top: 3rem;
   text-align: center;
+  margin-top: 3rem;
+  display: inline-block;
 }
 
-.info-cruz h2::before {
+.info-cruz h2::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 15%;
-  transform: translateX(-50%);
-  width: 80px;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
   height: 3px;
   background-color: #3a0440;
+  border-radius: 2px;
 }
 
 .info-cruz p {
@@ -259,4 +261,47 @@
   justify-content: center;
   gap: 3rem;
   max-width: 1200px;
+}
+/*Responsividade*/
+
+@media (max-width: 1024px) {
+  .timeline-content {
+    width: 40%;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content {
+    left: 10%;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    left: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-content {
+    position: relative;
+    width: 90%;
+    margin-left: 30px;
+    left: 0 !important;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content,
+  .timeline-item:nth-child(odd) .timeline-content {
+    left: 0 !important;
+  }
+
+  .timeline-date {
+    left: 30px;
+    transform: none;
+  }
+
+  .timeline-dot {
+    left: 10px;
+    transform: none;
+  }
 }

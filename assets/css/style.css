@@ -42,7 +42,7 @@ body {
 .h2::after {
   content: "";
   display: block;
-  margin-top: 10px; 
+  margin-top: 10px;
   width: 100%;
   height: 3px;
   background-color: #3a0440;
@@ -140,17 +140,17 @@ section {
 .slider {
   position: relative;
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 80px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .slider .list {
   display: flex;
   transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-  height: 70vh; 
+  height: 70vh;
   max-height: 600px;
 }
 
@@ -181,13 +181,13 @@ section {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.8);
   border: none;
   font-size: 24px;
   font-weight: bold;
   color: #333;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
@@ -197,7 +197,7 @@ section {
 .slider .buttons button:hover {
   background: white;
   transform: scale(1.1);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .slider .dots {
@@ -216,7 +216,7 @@ section {
   list-style: none;
   width: 12px;
   height: 12px;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   margin: 0 8px;
   border-radius: 20px;
   transition: all 0.5s ease;
@@ -225,7 +225,7 @@ section {
 }
 
 .slider .dots li:hover {
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .slider .dots li.active {
@@ -234,17 +234,16 @@ section {
 }
 
 .slider::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 40%;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   pointer-events: none;
   z-index: 1;
 }
-
 
 .rool-images {
   display: flex;
@@ -375,7 +374,7 @@ section {
 .proposito h2::after {
   content: "";
   display: block;
-  margin-top: 10px; 
+  margin-top: 10px;
   width: 100%;
   height: 3px;
   background-color: #3a0440;
@@ -469,7 +468,7 @@ section {
 .eventos h2::after {
   content: "";
   display: block;
-  margin-top: 10px; 
+  margin-top: 10px;
   width: 100%;
   height: 3px;
   background-color: #3a0440;
@@ -622,7 +621,7 @@ section {
 .cursos h2::after {
   content: "";
   display: block;
-  margin-top: 10px; 
+  margin-top: 10px;
   width: 100%;
   height: 3px;
   background-color: #3a0440;
@@ -731,7 +730,7 @@ section {
 .projects h2::after {
   content: "";
   display: block;
-  margin-top: 10px; 
+  margin-top: 10px;
   width: 100%;
   height: 3px;
   background-color: #3a0440;
@@ -839,11 +838,9 @@ section {
   display: block;
 }
 
-
-
 /* PAGINA EVENTOS */
 
-.eventos-page{
+.eventos-page {
   padding: 100px 15px;
 }
 
@@ -865,7 +862,7 @@ section {
 .eventos-page h2::after {
   content: "";
   display: block;
-  margin-top: 10px; 
+  margin-top: 10px;
   width: 100%;
   height: 3px;
   background-color: #3a0440;
@@ -925,7 +922,6 @@ section {
   object-fit: cover;
   z-index: 1;
 }
-
 
 /* FOOTER */
 
@@ -1002,24 +998,23 @@ section {
   .slider .list {
     height: 24vh;
   }
-  
+
   .slider .buttons button {
     width: 40px;
     height: 40px;
     font-size: 18px;
   }
-  
+
   .slider .dots li {
     width: 10px;
     height: 10px;
   }
-  
+
   .slider .dots li.active {
     width: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-
   .rool-images {
     left: 25%;
   }
@@ -1350,183 +1345,282 @@ section {
     .projects h2 {
       font-size: 4rem;
     }
-  
 
-  .projects h2::before {
-    width: 40px;
-  }
+    .projects h2::before {
+      width: 40px;
+    }
 
-  .projects h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1;
-    font-family: "Montserrat", sans-serif;
-    margin-left: 2rem;
-    margin-top: 2rem;
-  }
+    .projects h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1;
+      font-family: "Montserrat", sans-serif;
+      margin-left: 2rem;
+      margin-top: 2rem;
+    }
 
-  .projects p {
-    font-size: 1.5rem;
-    line-height: 150%;
-    max-width: 500px;
-    text-align: justify;
-    font-family: "Nunito", sans-serif;
-    color: #828282;
-    padding: 2rem;
-  }
+    .projects p {
+      font-size: 1.5rem;
+      line-height: 150%;
+      max-width: 500px;
+      text-align: justify;
+      font-family: "Nunito", sans-serif;
+      color: #828282;
+      padding: 2rem;
+    }
 
-  .btn-p {
-    display: inline-block;
-    margin-top: 3px;
-    margin-bottom: 10px;
-    padding: 1rem 1.8rem;
-    border-radius: 24px;
-    font-size: 18px;
-    color: black;
-    border: 2px solid transparent;
-    letter-spacing: 0.1rem;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
+    .btn-p {
+      display: inline-block;
+      margin-top: 3px;
+      margin-bottom: 10px;
+      padding: 1rem 1.8rem;
+      border-radius: 24px;
+      font-size: 18px;
+      color: black;
+      border: 2px solid transparent;
+      letter-spacing: 0.1rem;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
 
-  .btn-p:hover {
-    transform: scale(1.05);
-  }
+    .btn-p:hover {
+      transform: scale(1.05);
+    }
 
-  .btn-project {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-left: 4rem;
-  }
+    .btn-project {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-left: 4rem;
+    }
 
-  .btn-project a {
-    color: #828282;
-    border: 2px solid #828282;
-    font-size: 1rem;
-  }
+    .btn-project a {
+      color: #828282;
+      border: 2px solid #828282;
+      font-size: 1rem;
+    }
 
-  .btn-project a:hover {
-    color: black;
-  }
+    .btn-project a:hover {
+      color: black;
+    }
 
-  .project-card {
-    display: flex;
-    border-radius: 24px;
-    overflow: hidden;
-    margin: 2.5rem auto 2.5rem;
-    max-width: 400px;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease-in-out;
-  }
+    .project-card {
+      display: flex;
+      border-radius: 24px;
+      overflow: hidden;
+      margin: 2.5rem auto 2.5rem;
+      max-width: 400px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease-in-out;
+    }
 
-  .project-card:hover {
-    transform: scale(1.02);
-  }
+    .project-card:hover {
+      transform: scale(1.02);
+    }
 
-  .card-text {
-    flex: 1;
-    height: 25rem;
-  }
+    .card-text {
+      flex: 1;
+      height: 25rem;
+    }
 
+    /* PAGINA EVENTOS */
 
-
-  /* PAGINA EVENTOS */
-
-   .eventos-page h2 {
+    .eventos-page h2 {
       font-size: 3rem;
     }
-  
 
-  .eventos-page h2::before {
-    width: 40px;
-  }
+    .eventos-page h2::before {
+      width: 40px;
+    }
 
-  .eventos-page h3 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    line-height: 1;
-    font-family: "Montserrat", sans-serif;
-    margin-left: 2rem;
-    margin-top: 2rem;
-  }
+    .eventos-page h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 1;
+      font-family: "Montserrat", sans-serif;
+      margin-left: 2rem;
+      margin-top: 2rem;
+    }
 
-  .eventos-page p {
-    font-size: 1.3rem;
-    line-height: 150%;
-    max-width: 500px;
-    text-align: justify;
-    font-family: "Nunito", sans-serif;
-    color: #828282;
-    padding: 1rem;
-  }
+    .eventos-page p {
+      font-size: 1.3rem;
+      line-height: 150%;
+      max-width: 500px;
+      text-align: justify;
+      font-family: "Nunito", sans-serif;
+      color: #828282;
+      padding: 1rem;
+    }
 
-  
+    .eventos-page-card {
+      display: flex;
+      border-radius: 24px;
+      overflow: hidden;
+      margin: 2.5rem auto 2.5rem;
+      max-width: 400px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease-in-out;
+    }
 
-  .eventos-page-card {
-    display: flex;
-    border-radius: 24px;
-    overflow: hidden;
-    margin: 2.5rem auto 2.5rem;
-    max-width: 400px;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease-in-out;
-  }
+    .eventos-page-card:hover {
+      transform: scale(1.02);
+    }
 
-  .eventos-page-card:hover {
-    transform: scale(1.02);
-  }
+    .eventos-page-card-text {
+      flex: 1;
+      height: 20rem;
+    }
 
-  .eventos-page-card-text {
-    flex: 1;
-    height: 20rem;
-  }
+    .home-content h1 {
+      font-size: 4rem;
+    }
 
-  .home-content h1 {
-    font-size: 4rem;
-  }
+    .heading {
+      font-size: 4rem;
+      margin: 2rem 0;
+    }
+    .home-content h1 {
+      font-size: 4rem;
+    }
 
-  .heading {
-    font-size: 4rem;
-    margin: 2rem 0;
-  }
-  .home-content h1 {
-    font-size: 4rem;
-  }
+    .home-content h3 {
+      font-size: 1.6rem;
+    }
 
-  .home-content h3 {
-    font-size: 1.6rem;
-  }
+    .tittle-text {
+      font-size: 1.5rem;
+    }
+    .footer {
+      padding: 20px 0;
+    }
+    .footer .social a {
+      font-size: 18px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      margin: 0 3px;
+    }
 
-  .tittle-text {
-    font-size: 1.5rem;
-  }
-  .footer {
-    padding: 20px 0;
-  }
-  .footer .social a {
-    font-size: 18px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    margin: 0 3px;
-  }
+    .footer ul {
+      font-size: 12px;
+    }
 
-  .footer ul {
-    font-size: 12px;
-  }
+    .footer ul li {
+      padding: 0 5px;
+    }
 
-  .footer ul li {
-    padding: 0 5px;
+    .footer .copyright {
+      font-size: 12px;
+    }
   }
+}
 
-  .footer .copyright {
-    font-size: 12px;
-  }
-  }
+/* CURSOS */
+
+.cursos-materiais {
+  max-width: 1200px;
+  margin: 10rem auto 5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 4rem;
+  color: #3a0440;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+
+.titulo::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #3a0440;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.box-curso {
+  margin-top: 2rem;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+/* VÍDEO */
+
+.video-box {
+  flex: 1;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.btn-playlist {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-playlist .btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+  background-color: #3a0440;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-playlist .btn:hover {
+  background-color: #5d2b6d;
+  transform: scale(1.05);
+}
+
+.descricao {
+  flex: 1;
+  max-width: 500px;
+  font-size: 1.6rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.descricao h2 {
+  font-size: 2.6rem;
+  margin-bottom: 1.5rem;
+  color: #3a0440;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.descricao p {
+  color: #333;
+  line-height: 1.6;
 }
