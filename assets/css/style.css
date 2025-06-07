@@ -1535,7 +1535,7 @@ section {
   font-weight: 700;
   position: relative;
   display: inline-block;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .titulo::after {
@@ -1623,4 +1623,18 @@ section {
 .descricao p {
   color: #333;
   line-height: 1.6;
+}
+
+/*Canva pro*/
+
+.curso-canva-pro {
+  background-color: #fad0fa;
+  width: 100%;
+  padding: 4rem 0;
+  margin-top: 0px;
+}
+
+.cont-curso {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
