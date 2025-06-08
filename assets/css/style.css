@@ -316,7 +316,7 @@ section {
 /* OBJETIVO */
 .objetivo {
   padding: 0px 15px;
-  background-color: #1b011f;
+  background-color: #871d87;
 }
 .objetivo h2 {
   margin-bottom: 5rem;
@@ -455,7 +455,7 @@ section {
 /* EVENTOS */
 .eventos {
   padding: 100px 15px;
-  background-color: #1b011f;
+  background-color: #871d87;
 }
 
 .eventos h3 {
@@ -471,7 +471,7 @@ section {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #fff;
@@ -563,6 +563,7 @@ section {
   background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 12px;
+  z-index: 2;
   text-align: center;
 }
 .eventos-card-image {
@@ -577,6 +578,15 @@ section {
   width: 100%;
   height: auto;
   object-fit: cover;
+  z-index: 0;
+}
+.eventos-card-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(147, 119, 137, 0.3);
+  z-index: 1;
+  pointer-events: none;
 }
 .localizacao {
   display: inline-flex;
@@ -727,14 +737,14 @@ section {
 
 .projects {
   padding: 100px 15px;
-  background-color: #1b011f;
+  background-color: #871d87;
 }
 
 .projects h2 {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #fff;
@@ -1607,7 +1617,7 @@ section {
   padding: 1rem 2.5rem;
   font-size: 1.8rem;
   border-radius: 2rem;
-  background-color: #3a0440;
+  background-color: #9a1a9a;
   color: #fff;
   font-weight: 600;
   text-align: center;
@@ -1616,7 +1626,7 @@ section {
 }
 
 .btn-playlist .btn:hover {
-  background-color: #5d2b6d;
+  background-color: #8e2b8e;
   transform: scale(1.05);
 }
 
@@ -1651,7 +1661,7 @@ section {
 }
 
 .card-curso {
-  background-color: #1b011f;
+  background-color: #871d87;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   margin: 4rem auto;
@@ -1866,6 +1876,7 @@ section {
   text-align: center;
   color: #2c003e;
   margin: 0;
+  font-size: 1.8rem;
 }
 .bolinha-parceiro .contato-parceiro,
 .bolinha-parceiro .contato-parceiro * {
