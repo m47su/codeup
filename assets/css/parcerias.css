@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 50%;
+  overflow-x: hidden;
+}
+
+body {
+  background: white;
+  color: #828282;
+  overflow-x: hidden;
+}
+
+/* Nave Bar */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 18% 0rem;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  background-color: #ffffffa4;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.img-logo {
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 80px;
+  height: 60px;
+}
+
+.img-logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar a {
+  font-size: 1.8rem;
+  color: #828282;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #3a0440;
+  border-bottom: 3px solid #3a0440;
+  z-index: 15;
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  display: none;
+}
+
+/* ---------------------- Título ---------------------- */
+main #titulo {
+  text-align: center;
+  margin: 2rem 1rem 1rem;
+  padding: 10rem 10rem 0rem;
+}
+
+#titulo h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #3a0440;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.5rem;
+  cursor: default;
+}
+
+#titulo h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #723672;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#titulo h1:hover::after {
+  transform: scaleX(1);
+}
+
+/* ---------------------- Blocos Gerais ---------------------- */
+.bloco {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.texto {
+  flex: 1;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.texto h2 {
+  font-size: 3rem;
+  color: #3a0440;
+  margin-bottom: 1rem;
+}
+
+.texto p {
+  font-size: 2rem;
+  color: #3a0440;
+  line-height: 1.6;
+}
+
+.imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ---------------------- Cores das seções ---------------------- */
+#formacao_educacional {
+  background-color: rgba(192, 171, 190, 0.26);
+}
+
+#financiamento_coletivo {
+  background-color: rgba(192, 171, 190, 0.26);
+}
+
+/* ---------------------- Responsividade ---------------------- */
+@media (max-width: 768px) {
+  .conteudo {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .texto {
+    margin-left: 0;
+    padding: 0 1rem;
+  }
+
+  .imagem img {
+    max-width: 100%;
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #921a92;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  left: 10%;
+  position: relative;
+}
+
+.footer-about,
+.footer-contacts {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  width: 60%;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.footer-contacts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contacts ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.footer-contacts ul li i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #fff;
+}
