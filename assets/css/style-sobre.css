@@ -81,7 +81,7 @@
   transform: translateX(-50%);
   width: 4px;
   height: calc(100% - 120px);
-  background-color: #2c003e;
+  background-color: #871d87;
 }
 
 .timeline-item {
@@ -103,7 +103,7 @@
   position: absolute;
   width: 27%;
   padding: 2rem;
-  background-color: #2c003e;
+  background-color: #871d87;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   border: 1px solid #ccc;
@@ -122,7 +122,7 @@
   transform: translate(-50%, 0);
   width: 18px;
   height: 18px;
-  background-color: #2c003e;
+  background-color: #871d87;
   border-radius: 50%;
   z-index: 2;
 }
@@ -133,7 +133,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
-  color: #2c003e;
+  color: #871d87;
   font-weight: 600;
   font-size: 2.5rem;
   padding: 0.2rem 0.6rem;
