@@ -283,13 +283,7 @@ section {
   transition: transform 0.3s ease;
 }
 
-#img-simbolo {
-  width: 354px;
-}
 
-#img-mulher {
-  width: 295px;
-}
 
 .image-item img:hover {
   transform: scale(1.05);
@@ -1044,36 +1038,36 @@ section {
 }
 @media screen and (max-width: 768px) {
   .rool-images {
-    left: 25%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+  }
+
+  .image-container {
+    justify-content: center;
   }
 
   .image-container img {
     width: 150px;
     height: auto;
     transition: transform 0.3s ease;
-    left: 2rem;
-  }
-
-  #img-computador {
-    width: 140px;
-  }
-
-  #img-simbolo {
-    width: 160px;
-  }
-
-  #img-mulher {
-    width: 160px;
+    left: 0;
+    display: block;
+    margin: 0 auto;
   }
 
   .image-item img:hover {
-    transform: scale(1.05);
+    transform: none;
   }
 
   .image-item p {
     font-size: 1.5rem;
-    right: 25%;
-    position: relative;
+    text-align: center;
+    position: static;
+    right: 0;
+    margin: 0.5rem auto 1.5rem;
+    max-width: 280px;
   }
 }
 
@@ -1158,7 +1152,7 @@ section {
     }
     .home {
       flex-direction: column-reverse;
-      margin: 5rem 4rem;
+      margin: 5rem 1rem;
     }
     .home-content h3 {
       font-size: 4rem;
@@ -1246,34 +1240,49 @@ section {
       font-size: 3rem;
       left: 3rem;
     }
+    /* Objetivo */
+    .objetivo-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
     .objetivo p {
-      margin-bottom: 0;
-      width: 105%;
-      margin-left: 0;
-      margin-right: 0;
+      margin: 0.5rem 1rem;
+      width: 100%;
       font-size: 2rem;
-      margin-top: -27rem;
+      text-align: center;
     }
 
     .objetivo h2 {
-      margin-bottom: 30rem;
-      width: 20%;
-      margin-left: 0;
-      margin-right: 0;
-      font-size: 5rem;
+      margin: 1.5rem 1rem 0.5rem;
+      width: 100%;
+      font-size: 4.5rem;
+      text-align: center;
+    }
+
+    .imagem-flex {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      margin-left: 20%;
     }
 
     #objetivo-img {
-      max-width: 40rem;
+      max-width: 80%;
       height: auto;
       position: relative;
-      left: -202px;
-      top: 15rem;
+      top: 0;
+      display: block;
+      margin: 0 auto;
+      transition: none;
     }
 
-    .objetivo {
-      height: 60rem;
-    }
+    #objetivo-img:hover {
+  transform: none;
+}
 
     .proposito h2 {
       font-size: 4rem;
@@ -1353,21 +1362,48 @@ section {
     .cursos-text {
       flex: 1;
     }
+    .cursos-content {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 1.5rem;
+    }
     .cursos-img img {
-      display: none;
+      display: block;
+      width: 80%;
+      max-width: 300px;
+      height: auto;
+      margin: 1.5rem auto 0;
     }
 
     .cursos p {
       font-size: 2rem;
       width: 100%;
-      text-align: justify;
+      text-align: center;
       margin-left: auto;
       margin-right: auto;
+    }
+    .cursos-text {
+      text-align: center;
+    }
+
+    .cursos-text p {
+      left: 0 !important;
+      position: static !important;
+      margin: auto;
+      max-width: 100%;
+      text-align: justify;
     }
 
     .btn-group a {
       width: 18rem;
       text-align: center;
+    }
+    .btn-group {
+      margin: 1.2rem auto 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .projects h2 {
@@ -1504,6 +1540,12 @@ section {
       height: 20rem;
     }
 
+
+    /* HOME */
+
+    .home{
+        padding: 0rem 0% 10rem;
+    }
     .home-content h1 {
       font-size: 4rem;
     }
@@ -1549,6 +1591,44 @@ section {
 }
 
 /* CURSOS */
+
+/* Very small screens: stack rool-images vertically */
+@media (max-width: 420px) {
+  .rool-images {
+    margin-top: 4rem;
+    padding: 0 1rem;
+  }
+
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .image-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .image-container img {
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .image-item p {
+    max-width: 92%;
+    margin: 0.5rem auto 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
 
 .cursos-materiais {
   max-width: 1200px;
